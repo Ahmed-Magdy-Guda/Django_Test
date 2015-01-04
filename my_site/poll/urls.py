@@ -4,10 +4,7 @@ from django.conf.urls import patterns, url
 
 from poll import views
 
-urlpatterns = patterns\
-(
-    '',
-    # ex: /polls/
+urlpatterns = patterns('',
     url(r'^$', views.index, name='index'),
     # ex: /polls/5/
     url(r'^(?P<question_id>\d+)/$', views.detail, name='detail'),
